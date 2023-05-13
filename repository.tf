@@ -37,7 +37,7 @@ resource "github_branch_protection" "prd" {
     required_approving_review_count = 2
     require_code_owner_reviews      = true
     require_last_push_approval      = true
-    pull_request_bypassers = var.pull_request_bypassers
+    #pull_request_bypassers = var.pull_request_bypassers
   }
 
   required_status_checks {
@@ -60,7 +60,7 @@ resource "github_branch_protection" "master" {
     required_approving_review_count = 2
     require_code_owner_reviews      = true
     require_last_push_approval      = true
-    pull_request_bypassers = var.pull_request_bypassers
+    #pull_request_bypassers = var.pull_request_bypassers
   }
 
   required_status_checks {

@@ -27,5 +27,5 @@ jobs:
           TF_LOG: DEBUG
         run: |
           terraform init
-          terraform plan
+          terraform plan -var "token=${TF_VAR_github_token}"
           terraform apply -auto-approve -var "token=${TF_VAR_github_token}"
